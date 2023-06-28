@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<link rel="stylesheet" href="splide-4.1.3\dist\css\splide.min.css">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="images/Dark_logo_ijroaw.avif" alt="">
+        <ul>
+            <li onclick="toggle();">parks<i class='fas fa-angle-down'></i></li>
+            <li>resort</li>
+            <li>events</li>
+            <li>park timings and tickets</li>
+            <li>offers</li>
+            <li>dress code</li>
+            <li onmouseover="show();"><i class="fa fa-bars"></i></li>
+        </ul>
+        <div class="book-now-button">BOOK NOW</div>
+    </div>
+    <!--Drop down container start-->
+
+    <div class="drop-down-container" id="drop-down">
+         <div class="drop-down-content top-down" id="drop-content">
+           <p style="color: white; font-size: 20px; padding-left: 5px;">parks</p>
+           <p><i class='fas fa-angle-right' style='font-size:16px'></i>  Wonderla kochi</p>
+           <p> <i class='fas fa-angle-right' style='font-size:16px'></i> Wonderla Bengaluru</p>
+           <p> <i class='fas fa-angle-right' style='font-size:16px'></i> Wonderla Hydrabad</p>
+
+         </div>
+    </div>
+    <div class="more-menu" id="more-menu">
+     <ul>
+        <li>Getting to Wonderla</li>
+        <li>Contact US</li>
+        <li>Plan Your Visit</li>
+     </ul>
+    </div>
+    <!--Navigation end-->
+    <!--Slider Starting-->
+    <div class="body-con">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="images/Wonderla_slide1.avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/Wonderla_slide2.avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/Wonderla_slide3.avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/Wonderla_slide4.avif" alt="">
+                </div>
+
+                <!--aUTOMATIC-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--auto navend-->
+            </div>
+            <!--manuel nav start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <!--Slider Ending-->
+
+    <!--About Session start-->
+    <div class="about-container">
+        <div class="about-content move-down">
+            <h1>WONDERLA - The Largest Amusement Park In India</h1>
+            <h2>Step into a world of magic, where joy springs to life!</h2>
+            <hr style=" width: 70px; height: 2px; background-color:black; margin: auto;">
+            <p>We are so much more than an amusement park - a world where everyone comes together and enjoys the little
+                moments.
+                A life of fun is what everyone deserves, so come on down to the Wonderla closest to you!</p>
+        </div>
+    </div>
+
+    <!--About Session End-->
+
+    <!--image zooming session start-->
+    <div class="img-zoom-container">
+        <div class="img-text-container" style="background-color:#d13841;">
+            <img src="images/Wonderla_kochi.avif" alt="">
+            <div class="content">
+                <h1>Wonderla kochi</h1>
+            </div>
+        </div>
+        <div class="img-text-container" style="background-color:#007 ;">
+            <img src="images/Wonderla_Bangalore.avif" alt="">
+            <div class="content">
+                <h1>Wonderla Bangalor</h1>
+            </div>
+        </div>
+        <div class="img-text-container" style="background-color: #0b9134;">
+            <img src="images/Wonderla_Hydrabad.avif" alt="">
+            <div class="content">
+                <h1>Wonderla Hydrabad</h1>
+            </div>
+        </div>
+        <div class="img-text-container" style="background-color: #b8336d;">
+            <img src="images/Wonderla_Resort.avif" alt="">
+            <div class="content">
+                <h1 style="width: 230px;">Wonderla Resort, Banglore</h1>
+            </div>
+        </div>
+
+    </div>
+    <!--Image zooming session end-->
+    <!--Ride Slider start-->
+    <div class="ride_poly_container">
+        <div class="ride_poly">
+
+            <div class="ride-content move-down">
+                <h1>Up, down, fabulous thrills all around!</h1>
+                <hr style=" width: 70px; height: 2px; background-color:white; margin: 15px auto;">
+                <p>Up, down, fabulous thrills all around!</p>
+            </div>
+          <!--ride image slider start-->
+            <div class="splide custom"  aria-labelledby="carousel-heading">
+                <h2 id="carousel-heading"></h2>
+            
+            
+                <div class="splide__track">
+                    <div class="splide__list custom-list">
+                        <div class="splide__slide slide-custom">
+                            <img src="images/Equinox_at_Wonderla_Kochi.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Equninox 360</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img  src="images/Mission_Interstellar.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Interstellar</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img  src="images/Wonderla_Bamba.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Wonderla Bamba</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img src="images/Maverick_at_Wonderla_Hyderabad.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Maverick</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img  src="images/wondersplash_at_Wonderla_Hyderabad_Park.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Wondersplash</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img  src="images/Wavepool_at_Wonderla_Amusement_Park.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Wave pool</p>
+                            </div>
+                        </div>
+                        <div class="splide__slide slide-custom">
+                            <img src="images/RECOIL_at_Bengaluru_Park.avif" alt="">
+                            <div class="ride-name-container">
+                                <p>Recoil</p>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <!--Ride image slider end-->
+                 
+                    
+
+             
+               
+            </div>
+
+        </div>
+
+    </div>
+    <!--Ride slider end-->
+    <!--Food slider start-->
+      <div class="food_poly_container">
+        <div class="food_poly"> 
+         
+          
+        <section class="splide splide-food custom" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading"></h2>
+        
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Mexican_Chicken_Burger_at_Wonderla_flvs8y.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Ghee_Roast_at_Wonderla_mpb2z0.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Chicken_Biryani_at_Wonderla_yqavwl.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Bhelpuri_at_Wonderla_h0olco.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Brownie_with_Ice_Cream_at_Wonderla_nsuvzb.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Butter_Chicken_with_Paratha_at_Wonderla_xmcqem.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Chicken_Curry_with_Steamed_Rice_at_Wonderla_p5idvb (1).avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Exotic_Paneer_Pizza_at_Wonderla_ciiejq (1).avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Veg_Hakka_Noodles_with_Chicken_Manchurian_at_Wonderla_p44b1c.avif" alt="">
+                    </div>
+                    <div class="splide__slide slide-custom">
+                        <img src="images/Chicken_Manchurian_at_Wonderla_ybybj4.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+    
+           
+
+            <div class="food-content move-down">
+                <h1>Good food = Great day!</h1>
+                <hr style=" width: 70px; height: 2px; background-color:#0a2254; margin: 15px auto;">
+                <p style="width: 500px;">Relish a delightful gastronomical experience.
+                    Enjoy scrumptious meals at Wonderla.</p>
+            </div>
+
+        </div>
+
+    </div> 
+    <!--FOod slider end-->
+
+
+
+
+    
+    </div>
+
+    <!--Gift shopping container start-->
+    <div class="gift-shop-container">
+        <div class="gift-img-container">
+            <img src="images/Merchandise_uqrpsw.avif" alt="">
+        </div>
+        <div class="gift-content-container">
+            <div class="move-down">
+            <h1>Wonder merchandise!</h1>
+            <hr style=" width: 70px; height: 2px; background-color:white; margin: auto;">
+            <p>Gift shops stuffed with toys, apparel, photos and souvenirs to gift your loved ones and a little
+                something for yourself
+                to immortalise a day of fun and frolic!</p>
+            </div>
+            <button class="know-more-button">Know More</button>
+
+        </div>
+
+    </div>
+
+    <!--Gift shopping container end-->
+    <!--blur slider start-->
+    <div class="blur-slider-container">
+<h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px;" class="move-down">Offers you simply can't refuse!</h1>
+
+<div class="splide custom-blur-slide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+        <div class="splide__list">
+            <div class="splide__slide slide-custom">
+                <img src="images/Wonderla_Resort_3_nights_and_4_days_offer_xjdvup.avif" alt="">
+            </div>
+            <div class="splide__slide slide-custom">
+                <img src="images/Wonderla_advance_booking_offer_10_off_ud9zqg.avif" alt="">
+            </div>
+            <div class="splide__slide slide-custom">
+                <img src="images/Wonderla_BMTC_Offer_n5czme.avif" alt="">
+            </div>
+            <div class="splide__slide slide-custom">
+                <img src="images/Wonderla_Resort_Park_Package_cgkdjs.avif" alt="">
+            </div>
+            <div class="splide__slide slide-custom">
+                <img src="images/Wonderla_College_ID_20_off_esoep2.avif" alt="">
+            </div>
+            <div class="splide__slide slide-custom">
+                <img src="images/Equinox_at_Wonderla_Kochi.avif" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!--Blur slider end-->
+    <!--Footer Description start-->
+    <div class="footer-description-container">
+        <p class="footer-title">Wonderla Amusement Parks & Resort</p>
+        <div class="branches-container">
+            <div class="branch">
+                <p>Wonderla Kochi</p>
+                <p>Email: mail.cok@wonderla.com</p>
+                <p>Phone: 048 426 84001</p>
+                <p>+91 75938 53107</p>
+                <p>Direction///welcomes.trainload.engraved</p>
+            </div>
+            <div class="branch">
+                <p>Wonderla Bengaluru</p>
+                <p>Email: mail.blr@wonderla.com</p>
+                <p>Phone: 080 372 30333</p>
+                <p>080 350 73966</p>
+                <p>Direction///storybook.yourself.breeze</p>
+            </div>
+            <div class="branch">
+                <p>Wonderla Hyderabad</p>
+                <p>Email: mail.hyd@wonderla.com</p>
+                <p>Phone: 084 146 76333</p>
+                <p>+91 91000 63636</p>
+                <p>Direction///coolest.believer.poses</p>
+            </div>
+            <div class="branch">
+                <p>Wonderla Resort, Bengaluru</p>
+                <p>Email: resort.blr@wonderla.com</p>
+                <p>Phone: 080 350 73993</p>
+                <p>+91 99455 00011</p>
+                <p>Direction///storybook.yourself.breeze</p>
+            </div>
+
+        </div>
+        <p style="text-align: center;">Get In Touch</p>
+        <div class="social-media-container">
+            <div class="social-media" id="fb" >
+            <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social-media" id="twitter">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="social-media" id="pin"> 
+                <i class="fab fa-pinterest"></i>
+            </div>
+            <div class="social-media" id="insta">
+                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="social-media" id="you">
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="background-img-container">
+            <div class="links-container">
+
+                <p><a href="#">Home</a>
+                    <a href="#">Wonderla Kochi</a>
+                    <a href="#">Wonderla Bengaluru</a>
+                    <a href="#">Wonderla Hyderabad</a>
+                    <a href="#">Resort</a>
+                    <a href="#">Park Timings and Tickets
+                        <a href="#">Offers</a>
+                        <a href="#">Dress Code</a>
+                        <a href="#">Getting to Wonderla</a>
+                        <a href="#">Food & Beverages</a>
+                        <a href="#">Merchanndise</a>
+                        <a href="#">Tour Operators Portal</a>
+                        <a href="#">Rules and Regulations</a>
+                        <a href="#">Safety and Hygiene</a>
+                        <a href="#">Cancellation & Reshedule</a>
+                        <a href="#">Wonderlab</a>
+                        <a href="#">Green initiatives</a>
+                        <a href="#">CSR Initiatives</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Invertor Relations</a>
+                        <a href="#">News</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Tender</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Our People</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Events</a>
+                        <a href="#">Plan Your Visit</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--Footer Description End -->
+
+    <div class="footer">
+        <div class="text-box" onclick="show_destinations();"> 
+            <div class="destination-list" id="destinations">
+             <input type="text">
+             <ul>
+                <li>Parks</li>
+                <li>Resorts</li>
+             </ul>
+            </div>
+            <p>Location</p>
+            <input type="text" placeholder="Select Your destination">
+        </div>
+        <div class="text-box" onclick="show_property();">
+            <div class="property-list" id="property">
+              <input type="text">
+              <p style="color: black;">No result found</p>
+            </div>
+            <p>Property</p>
+            <input type="text" placeholder="Select Your property">
+        </div>
+        <button class="book_btn">
+            BOOK NOW
+        </button>
+
+    </div>
+    <script src="splide-4.1.3\dist\js\splide.min.js"></script>
+
+    <script>
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4)
+                counter = 1;
+        }, 5000); 
+        
+           var splide = new Splide('.splide', {
+                type: 'loop',
+                perPage: 2,
+                perMove: 1,
+                autoplay: true,
+               
+            });
+
+            splide.mount();
+
+             var splidefood = new Splide('.splide-food', {
+                    type: 'loop',
+                    perPage: 2,
+                    perMove: 1,
+                    autoplay: true,
+                  
+                });
+
+                splidefood.mount();
+
+                 var splideblur = new Splide('.custom-blur-slide', {
+                        type: 'loop',
+                        padding: '10rem',
+                        autoplay: true,
+                    });
+
+                    splideblur.mount();
+         
+           function toggle() {
+                var x = document.getElementById("drop-down");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+              function show() {
+                    var x = document.getElementById("more-menu");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                function show_destinations(){
+                   var x=document.getElementById("destinations");
+                   if(x.style.height=='0px')
+                   {
+                    x.style.height='100px';
+                   }
+                   else{
+                    x.style.height='0px';
+                   }
+                }
+                function show_property() {
+                        var x = document.getElementById("property");
+                        if (x.style.height == '0px') {
+                            x.style.height = '80px';
+                        }
+                        else {
+                            x.style.height = '0px';
+                        }
+                    }
+        </script>
+
+       
+</body>
+
+</html>
